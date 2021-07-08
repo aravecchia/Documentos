@@ -1,0 +1,58 @@
+% Template for documenting your Arduino projects
+% Author:   Luis José Salazar-Serrano
+%           totesalaz@gmail.com / luis-jose.salazar@icfo.es
+%           http://opensourcelab.salazarserrano.com
+
+%%% Template based in the template created by Karol Kozioł (mail@karol-koziol.net)
+
+%\linespread{1.3}
+
+\renewcommand{\linia}{\rule{\linewidth}{2mm}}
+
+%\newcommand{\fontstyle}{\bfseries\ttfamily}
+\renewcommand{\fontstyle}{\bfseries\sffamily}
+
+\lstset{%
+	language = C,	
+	fillcolor=\color{white},
+	backgroundcolor=\color{white},   
+	basicstyle=\small,  
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                   
+	commentstyle=\color{gray},    
+	deletekeywords={...},           
+	escapeinside={\%*}{*)},          
+	extendedchars=true,              
+	%frame=shadowbox, 
+	frame=single,                   
+	keepspaces=true,                 
+	keywordstyle=\bfseries\color{orange},       
+	morekeywords={*,...},            
+	numbers=left,                    
+	numbersep=5mm,                   
+	numberstyle=\footnotesize\color{darkgray}, 
+	rulecolor=\color{black},         
+	rulesepcolor=\color{black},
+	showspaces=false,                
+	showstringspaces=false,          
+	showtabs=false,                  
+	stepnumber=1,                    
+	stringstyle=\color{orange},    
+	tabsize=3,                       
+	title=\lstname,
+	emphstyle=\bfseries\color{blue},%  style for emph={} 
+	framexleftmargin=3mm,
+	framextopmargin=3mm
+} 
+
+%% language specific settings:
+\lstdefinestyle{python}{%
+	language = python,
+	keywords={loop, setup, int, boolean, float, analogRead, analogWrite, digitalRead, digitalWrite, Serial, print, println, begin, delay, pinMode},%                 define keywords
+	morecomment=[l]{//},%             treat // as comments
+	morecomment=[s]{/*}{*/},%         define /* ... */ comments
+	emph={def, import, while, for, if, in }%        keywords to emphasize
+}
+
+
