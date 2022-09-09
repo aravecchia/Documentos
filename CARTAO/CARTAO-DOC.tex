@@ -1,0 +1,37 @@
+\newcommand{\nX}{5} % Quantidade de cartões em X
+\newcommand{\nY}{4} % Quantidade de cartões em X
+\newcommand{\cartaoX}{80mm} % Comprimento
+\newcommand{\cartaoy}{50mm} % Altura
+
+\begin{tikzpicture}	
+	\foreach \i in {0,...,\nX}
+	{
+		\foreach \j in {0,...,\nY}
+	{
+
+	\draw [black, 
+%	fill=yellow, 
+	ultra thin]  (\i*\cartaoX,\i*\cartaoy) rectangle  (\j*\cartaoX,\j*\cartaoy);
+	\node [right] at (\i*\cartaoX+35mm,\j*\cartaoy+35mm) {\Huge Alexandre};
+	\node [right] at (\i*\cartaoX+35mm,\j*\cartaoy+25mm) {\Huge Eletricista};
+\node [right] at (\i*\cartaoX+35mm,\j*\cartaoy+15mm) {\huge 98164-5723};
+\begin{scope}
+\ifthenelse{\i<\nX-1}{\node (image) at (\i*\cartaoX+5mm,\j*\cartaoy+10mm) [anchor=south west]{
+		\includegraphics[height=\cartaoy/2]{CARTAO/IMG/light}
+	};
+}{}
+\end{scope}
+
+	
+}
+}
+\end{tikzpicture}
+%
+%\pagebreak
+%
+%\Huge
+%\newcommand*{\teste}{3\%2}
+%%\teste
+%\ifthenelse{\equal{3\%2}{\teste}}{\teste}{F}
+%%\equal{string}{string}
+%%\equal{string}{string}
