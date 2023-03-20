@@ -1,0 +1,280 @@
+%   ,
+%    ,   |\ ,__
+%    |\   \/   `.
+%    \ `-.:.     `\
+%     `-.__ `\=====|
+%        /=`'/   ^_\
+%      .'   /\   .=)
+%   .-'  .'|  '-(/_|
+% .'  __(  \  .'`
+%/_.'`  `.  |`
+%    jgs  \ |
+%          |/
+  
+%%%%%%%%%%	TITULO
+\date{}
+\title{
+    \huge{
+		\vspace*{-30mm}
+	\resizebox{120mm}{20mm}{\color{black}{ABC}}
+	\\
+	\vspace{8mm}
+	\resizebox{120mm}{14mm}{\color{black}\textbf{da Inform\'{a}tica}}
+	\\
+	\vspace{10mm}
+	\resizebox{260mm}{8mm}{\color{black}{Um Guia do BNCC para Professores Desesperados}}
+	\\
+	\vspace{10mm}
+	\resizebox{240mm}{12mm}{\color{black}{Sistema de Gerenciamento de Aulas}}
+	\\
+	\vspace{6mm}
+	\resizebox{240mm}{12mm}{\color{black}{para Laborat\'{o}rios de Inform\'{a}tica}}
+%\\
+%\vspace{2mm}
+%\resizebox{160mm}{4mm}{\color{black}{Escola Municipal Professor Paulista - Tabatinga - SP}}
+%		\\
+%		\vspace{2mm}
+%		\resizebox{80mm}{6mm}{\color{black}{Latinoware 2021}}
+%		\vspace{5mm}
+    }
+}
+
+\author {\Huge \\\vspace{2mm}\resizebox{160mm}{10mm}
+	{
+	\color{black}\Huge Smith{ {\LARGE \&\&} 
+%		\Huge D\"{o}rr{ {\LARGE \&\&}
+			 {\Huge Aravecchia} {\LARGE \&\&} {\Huge all}}
+	}}
+%}
+%%%%%%%%%%	DOCUMENTCLASS
+\documentclass[18pt]{book}
+%\usepackage[paperwidth=33cm,paperheight=15cm]{geometry}
+
+%%%%%%%%%%	PAGINA
+\newcommand{\papelX}{343mm}
+\newcommand{\papelY}{194mm}
+\newcommand{\cabecalho}{15mm}
+\newcommand{\margem}{20mm}
+\newcommand{\rodape}{5mm}
+\newcommand{\letra}{5mm}
+\newcommand{\distancia}{8mm}
+\newcommand{\largura}{\textwidth}
+\newcommand{\altura}{\textheight}
+\newcommand{\alturaA}{\altura}
+\newcommand{\alturaB}{\alturaA-\distancia}
+\newcommand{\alturaC}{\alturaB-\distancia}
+\newcommand{\alturaD}{\alturaC-\distancia}
+\newcommand{\alturaE}{\alturaD-\distancia}
+\newcommand{\alturaF}{\alturaE-\distancia}
+\newcommand{\alturaG}{\alturaF-\distancia}
+\newcommand{\alturaH}{\alturaG-\distancia}
+\newcommand{\alturaI}{\alturaH-\distancia}
+\newcommand{\alturaJ}{\alturaI-\distancia}
+\newcommand{\alturaK}{\alturaJ-\distancia}
+\newcommand{\alturaL}{\alturaK-\distancia}
+\newcommand{\alturaM}{\alturaL-\distancia}
+\newcommand{\alturaN}{\alturaM-\distancia}
+\usepackage[portrait, top=\cabecalho,left=\margem,right=\margem,bottom=\rodape, paperwidth=\papelX,paperheight=\papelY]{geometry}
+
+%\setlength{\textwidth}{\largura-\margem}
+
+\setlength{\parindent}{\margem} % indent, o espaçamento inicial horizontal no início um parágrafo
+\setlength{\parskip}{3mm plus 10mm} % espaçamento entre um parágrafo e outro
+
+% \setlength{\oddsidemargin}{0mm}
+% \setlength{\marginparwidth}{0mm}
+\setlength{\topmargin}{-20mm}
+
+%  \setlength{\leftmargin}{-20mm}
+\setlength{\headsep}{10mm}
+%\setlength{\footskip}{-100mm}
+%\setlength{\footnoterule}{50mm}
+
+
+
+% Parametros para multicolunas
+%\setlength{\premulticols}{1mm}
+%\setlength{\postmulticols}{1mm}
+%\setlength{\multicolsep}{1mm}
+\setlength{\columnsep}{\margem}
+\setlength{\textheight}{155mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%FANCY
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\lhead{\large \sffamily Sistema de Gerenciamento para Laboratorios de Informatica}
+
+\chead {\large \sffamily \href{https://flisol.info/Brasil}{FLISoL}\includegraphics[height=7mm]{./IMG/flisol-logo-simples.jpg}}
+%\chead{\large \sffamily
+%		}
+%	
+%\lhead{\large \sffamily \blue \textbf{\leftmark}}
+\cfoot{\large \sffamily \LaTeX}
+\rhead{\large \sffamily Smith, Aravecchia et all}
+%\rfoot{\large \sffamily \blue SUA MARCA AQUI}
+
+\rfoot{\Large \sffamily \thepage}
+%\rfoot{\normalsize \sffamily \blue \thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+%Parametros linguisticos
+\pagenumbering{arabic}
+\fontencoding{T1}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+% Define comando BibTeX
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+	T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% N\~ao imprime numero de se\c c\~ao
+%\setcounter{secnumdepth}{0}
+
+\usepackage{multicol}
+\usepackage{vwcol}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{graphicx}% Usado para outros tipos de imagens
+\usepackage{color}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float} % Usado para posicionamento de imagens
+\usepackage{svg}  % Eis o pacote que queremos.
+
+\usepackage[
+colorlinks=true
+,linkcolor=blue
+,anchorcolor=blue
+,urlcolor=blue
+]
+{hyperref}
+\hypersetup{pdftitle={Alexandre Aravecchia}}
+
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{cite}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{sidecap}
+\usepackage{wallpaper}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{tgheros}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{textcomp}
+\usepackage{enumerate}
+\usepackage{pdfpages} % Para inserir páginas de um pdf externo no documento
+
+
+%\usepackage{fontspec} % Para mudar o estilo de todas as fontes (indice, por exemplo).
+%\setmainfont{OpenSans} % Altera o estilo de fonte para o corpo do texto.
+%\setindexfont{Arial} % Para alterar o estilo de fonte do índice.
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\cdot$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\renewcommand{\labelitemiv}{$\ast$}
+
+\usepackage{enumitem}
+\usepackage{courier}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{fixme}
+\usepackage{csvsimple}
+
+%_______________________________________ LATEXDRAW
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{epsfig}
+\usepackage{pst-grad}
+\usepackage{pst-plot}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pstricks-add}
+\usepackage{tikz-3dplot}
+\usepackage{tkz-euclide}
+%\usepackage[pdftex]{hyperref}
+
+\usetikzlibrary{arrows, arrows.meta, automata, backgrounds, calendar, chains, matrix, mindmap, patterns, petri, shadows, shapes.geometric, shapes.misc, spy, trees}
+
+\usepackage[european]{circuitikz}
+
+\tikzset{>=latex, %melhor aparência para as setas
+    inner sep=0pt,outer sep=0pt %sem separação entre os nós
+}
+
+%%%%%% DEFINICAO DE CORES
+\definecolor{black}{rgb}{0,0,0}
+\definecolor{white}{rgb}{1,1,1}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{green}{rgb}{0,1,0.1}
+\definecolor{blue}{rgb}{0,0,1}
+\definecolor{lightblue}{rgb}{.75,.75,1}
+\definecolor{darkblue}{rgb}{0,0,.57}
+\definecolor{skyblue}{rgb}{.9,.9,1}
+\definecolor{orange}{rgb}{1,.33,0}
+\definecolor{gold}{rgb}{1, 0.8, 0.2}
+\definecolor{gray}{rgb}{.5,.5,.5}
+
+\pagecolor{white} 
+\color{black}
+%CHAMADA DE CONFIGURACOES PARA CÓDIGO-FONTE EM ARDUINO
+\input{./TeX_files/ARDUINO-CODE.tex}
+%CHAMADA DE CONFIGURACOES PARA CÓDIGO-FONTE EM PYTHON
+\input{./TeX_files/PYTHON-CODE.tex}
+%SHELL
+\input{./TeX_files/SHELL-CODE.tex}
+%\usepackage{npn, ground, vcc, vin, vout, ci, legenda, transistorA, transistorB, transistorC, relay,  ssr, quedadetensao, motorA, motorB, triac, moc, kirchhoff, malha}
+%____________________________________________CODIGOS
+%lstset{language=Python,
+%morecomment={[s][{color{azul}}]{sequencia de 1}{sequencia de caracteres 2}, %diz
+%	que todo o texto entre a sequencia de caracteres 1 e a sequencia de caracteres 2 sera um comentario e
+%	sera pintada do tipo de cor 1
+%	morecomment={[l][{color{tipo de cor 2}}]{sequencia de caracteres}}, % diz que todo o texto a partir da
+%	sequencia de caracteres até a o final da linha sera considerado um comentario e sera pintado com tipo de
+%	cor 2
+%	keywordstyle=[1]color{tipo de cor 3}, %diz que todas as palavras reservadas da linguagem serão
+%	pintatadas com o tipo de cor 3.
+%
+%}
+\usepackage{mdframed}%complemento para wallpaper
+%'\makeindex
+\begin{document}
+    \setlength{\footskip}{-10mm}
+    \ThisCenterWallPaper{.8}{./IMG/flisol-logo-capa.jpg}
+%\ThisULCornerWallPaper{.9}{./IMG/flisol-logo-capa.jpg}
+    %\noindent
+    \setstretch{1.25} %espacamento entre linhas
+    %	\singlespacing % Para um espaçamento simples
+    %	\onehalfspacing % Para um espaçamento de 1,5
+    %	\doublespacing % Para um espaçamento duplo
+    \sffamily
+    \pagecolor{white} 
+    \color{black}
+    \maketitle
+%	\CenterWallPaper{1.1}{./IMG3D/MAKER_02.png}		
+    %	\CenterWallPaper{1.25}{./IMG/wallpaper.png}
+    %			\noindent
+    %		\end{itemize}
+    %\makebox[235mm][c]{{\includegraphics[height=50mm,width=230mm]{./IMG_2018/FB_IMG_15320316603844789.jpg}}}	\end{itemize}
+    %		\makebox[235mm][c]{	\raisebox{-\totalheight}[0mm][0pt]		{\includegraphics[height=\altura-\dXa,width=\largura]{./IMG_2018/FB_IMG_15320316603844789.jpg}}}	
+%    \pagebreak
+%\pagecolor{black} 
+\begin{multicols}{2}
+
+\tableofcontents
+\end{multicols}
+
+%    \tableofcontents
+%	\CenterWallPaper{1.1}{./IMG3D/MAKER_02.png}	
+%    \pagebreak
+\input{./TeX_files/CAPITULOS.tex}
+    %	\backmatter
+    % bibliography, glossary and index would go here.
+\end{document}
