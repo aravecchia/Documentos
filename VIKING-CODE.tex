@@ -1,38 +1,44 @@
+%   ,
+%    ,   |\ ,__
+%    |\   \/   `.
+%    \ `-.:.     `\
+%     `-.__ `\=====|
+%        /=`'/   ^_\
+%      .'   /\   .=)
+%   .-'  .'|  '-(/_|
+% .'  __(  \  .'`
+%/_.'`  `.  |`
+%    jgs  \ |
+%          |/
+  
 %%%%%%%%%%	TITULO
-\date{}
+
 \title{
-	\huge{
-%		\vspace{-5mm}
-		\resizebox{140mm}{8mm}{\color{white}{Modelagem 3D com}}
-		\\
-		\vspace{10mm}
-		\resizebox{140mm}{10mm}{\color{white}\textbf{FreeCAD}}
-		\\
-		\vspace{8mm}
-		\resizebox{100mm}{6mm}{\color{white}{14 a 18 de junho}}
-		\\
-		\vspace{4mm}
-		\resizebox{100mm}{6mm}{\color{white}{Semana da Ind\'{u}stria}}
-		\\
-		\vspace{2mm}
-		\resizebox{100mm}{5mm}{\color{white}{Instituto Federal de S\~{a}o Paulo}}
-	}
+	\resizebox{60mm}{12mm}{\color{black}{ABC}}
+	\\
+	\resizebox{60mm}{6mm}{\color{black}\textbf{da Inform\'{a}tica}}
+	\\
+	\resizebox{80mm}{5mm}{\color{black}{Aulas Expositivas}}
+
+}
+\author{
+	\resizebox{60mm}{4mm}{\color{black} Alexandre Aravecchia}
 }
 
-\author {\Huge \\\vspace{5mm}\resizebox{80mm}{5mm}{\color{white}Alexandre Aravecchia}}
-
+\date{\small \today}
+%}
 %%%%%%%%%%	DOCUMENTCLASS
-\documentclass[18pt]{article}
-%\usepackage[paperwidth=10cm,paperheight=10cm]{geometry}
+\documentclass[10pt]{book}
+%\usepackage[paperwidth=33cm,paperheight=15cm]{geometry}
 
 %%%%%%%%%%	PAGINA
-\newcommand{\papelX}{300mm}
-\newcommand{\papelY}{168mm}
-\newcommand{\cabecalho}{15mm}
+\newcommand{\papelX}{171mm}
+\newcommand{\papelY}{97mm}
+\newcommand{\cabecalho}{7mm}
 \newcommand{\margem}{10mm}
-\newcommand{\rodape}{5mm}
-\newcommand{\letra}{5mm}
-\newcommand{\distancia}{8mm}
+\newcommand{\rodape}{2mm}
+\newcommand{\letra}{2mm}
+\newcommand{\distancia}{4mm}
 \newcommand{\largura}{\textwidth}
 \newcommand{\altura}{\textheight}
 \newcommand{\alturaA}{\altura}
@@ -54,15 +60,15 @@
 %\setlength{\textwidth}{\largura-\margem}
 
 \setlength{\parindent}{\margem} % indent, o espaçamento inicial horizontal no início um parágrafo
-\setlength{\parskip}{3mm plus 10mm} % espaçamento entre um parágrafo e outro
+\setlength{\parskip}{1mm plus 5mm} % espaçamento entre um parágrafo e outro
 
 % \setlength{\oddsidemargin}{0mm}
 % \setlength{\marginparwidth}{0mm}
-\setlength{\topmargin}{-20mm}
+\setlength{\topmargin}{-25mm}
 
 %  \setlength{\leftmargin}{-20mm}
-\setlength{\headsep}{10mm}
-%\setlength{\footskip}{-100mm}
+\setlength{\headsep}{5mm}
+\setlength{\footskip}{-100mm}
 %\setlength{\footnoterule}{50mm}
 
 
@@ -72,40 +78,25 @@
 %\setlength{\postmulticols}{1mm}
 %\setlength{\multicolsep}{1mm}
 \setlength{\columnsep}{\margem}
-\setlength{\textheight}{140mm}
+\setlength{\textheight}{75mm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %FANCY
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-%\fancyhead[CE,CO]{\large \sffamily \blue \textbf{\rightmark}}
-%\fancyhead[LO,RE]{\large \sffamily \blue \textbf{\leftmark}}
 
-%\fancyhead[LO,RE]{\large \sffamily \blue \textbf{\leftmark}}
+\lhead{\small \sffamily ABC da Inform\'{a}tica}
 
-%\fancyfoot[LE,RO]{\textsl{\thepage}}
-
-%\fancyfoot[C]{\thepage}
-
-%\rhead{\LARGE \sffamily \includegraphics[height=7mm]{./IMG/LOGO-ESCOLA-3D}}
-%\chead{\large \sffamily \thesection}
-%\lhead{\large \sffamily \blue \thepage} \includegraphics[height=5mm]{./IMG/linux3} \LARGE \thesubsection}
-%\lhead{\large \sffamily \textbf{\leftmark}}
-
-\lhead{\large \sffamily Modelagem 3D  com FreeCAD}
-\chead{\large \sffamily %\textbf
-%	{ \hyperref
-%{www.escoladeimpressao3d.com.br}
-%{category}
-%{name}
-		{www.escoladeimpressao3d.com.br}}
-%	}
+\chead {\small \sffamily \href{https://flisol.info/Brasil}{FLISoL}\includegraphics[height=4mm]{./IMG/FLISoL-2015-simples.png}}
+%\chead{\large \sffamily
+%		}
+%	
 %\lhead{\large \sffamily \blue \textbf{\leftmark}}
-\cfoot{\large \sffamily \LaTeX}
-\rhead{\large \sffamily Alexandre Aravecchia}
+\cfoot{\sffamily \small \LaTeX}
+\rhead{\sffamily \small Alexandre Aravecchia}
 %\rfoot{\large \sffamily \blue SUA MARCA AQUI}
-%\chead{\large \sffamily Alexandre Aravecchia}
-\rfoot{\Large \sffamily \thepage}
+
+\rfoot{ \sffamily \thepage}
 %\rfoot{\normalsize \sffamily \blue \thepage}
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
@@ -118,7 +109,7 @@
 
 % Define comando BibTeX
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+	T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 % N\~ao imprime numero de se\c c\~ao
 %\setcounter{secnumdepth}{0}
@@ -137,12 +128,12 @@
 
 \usepackage[
 colorlinks=true
-,linkcolor=lightblue
-,anchorcolor=lightblue
-,urlcolor=cyan
+,linkcolor=blue
+,anchorcolor=blue
+,urlcolor=blue
 ]
 {hyperref}
-\hypersetup{pdftitle={FreeCAD - Alexandre Aravecchia}}
+\hypersetup{pdftitle={Alexandre Aravecchia}}
 
 \usepackage{calc}
 \usepackage{ifthen}
@@ -159,6 +150,19 @@ colorlinks=true
 \usepackage{amsthm}
 \usepackage{textcomp}
 \usepackage{enumerate}
+\usepackage{pdfpages} % Para inserir páginas de um pdf externo no documento
+\usepackage{media9} % Para inserir media no documento
+
+
+%\usepackage{fontspec} % Para mudar o estilo de todas as fontes (indice, por exemplo).
+%\setmainfont{OpenSans} % Altera o estilo de fonte para o corpo do texto.
+%\setindexfont{Arial} % Para alterar o estilo de fonte do índice.
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\cdot$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\renewcommand{\labelitemiv}{$\ast$}
+
 \usepackage{enumitem}
 \usepackage{courier}
 \usepackage{listings}
@@ -168,22 +172,22 @@ colorlinks=true
 
 %_______________________________________ LATEXDRAW
 \usepackage[usenames,dvipsnames]{pstricks}
-\usepackage{epsfig}
-\usepackage{pst-grad}
+%\usepackage{epsfig}
 \usepackage{pst-plot}
 \usepackage{pgf}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\usepackage{pstricks-add}
+\usepackage{pstrick s-add}
 \usepackage{tikz-3dplot}
 \usepackage{tkz-euclide}
+%\usepackage[pdftex]{hyperref}
 
 \usetikzlibrary{arrows, arrows.meta, automata, backgrounds, calendar, chains, matrix, mindmap, patterns, petri, shadows, shapes.geometric, shapes.misc, spy, trees}
 
 \usepackage[european]{circuitikz}
 
 \tikzset{>=latex, %melhor aparência para as setas
-	inner sep=0pt,outer sep=0pt %sem separação entre os nós
+    inner sep=0pt,outer sep=0pt %sem separação entre os nós
 }
 
 %%%%%% DEFINICAO DE CORES
@@ -193,6 +197,7 @@ colorlinks=true
 \definecolor{green}{rgb}{0,1,0.1}
 \definecolor{blue}{rgb}{0,0,1}
 \definecolor{lightblue}{rgb}{.75,.75,1}
+\definecolor{darkblue}{rgb}{0,0,.57}
 \definecolor{skyblue}{rgb}{.9,.9,1}
 \definecolor{orange}{rgb}{1,.33,0}
 \definecolor{gold}{rgb}{1, 0.8, 0.2}
@@ -200,11 +205,12 @@ colorlinks=true
 
 \pagecolor{white} 
 \color{black}
-
 %CHAMADA DE CONFIGURACOES PARA CÓDIGO-FONTE EM ARDUINO
-\input{ARDUINO-CODE.tex}
-%CHAMADA DE CONFIGURACOES PARA CÓDIGO-FONTE EM ARDUINO
-%\input{PYTHON-CODE.tex}
+\input{./TeX_files/ARDUINO-CODE.tex}
+%CHAMADA DE CONFIGURACOES PARA CÓDIGO-FONTE EM PYTHON
+\input{./TeX_files/PYTHON-CODE.tex}
+%SHELL
+\input{./TeX_files/SHELL-CODE.tex}
 %\usepackage{npn, ground, vcc, vin, vout, ci, legenda, transistorA, transistorB, transistorC, relay,  ssr, quedadetensao, motorA, motorB, triac, moc, kirchhoff, malha}
 %____________________________________________CODIGOS
 %lstset{language=Python,
@@ -221,27 +227,38 @@ colorlinks=true
 \usepackage{mdframed}%complemento para wallpaper
 %'\makeindex
 \begin{document}
-	\setlength{\footskip}{-10mm}
-	\CenterWallPaper{1.05}{./IMG/apresentacao.png}	
-	%\noindent
-	\setstretch{1.25} %espacamento entre linhas
-	%	\singlespacing % Para um espaçamento simples
-	%	\onehalfspacing % Para um espaçamento de 1,5
-	%	\doublespacing % Para um espaçamento duplo
-	\sffamily
-	\color{white}
-	\maketitle
+    \setlength{\footskip}{-5mm}
+%    \ThisCenterWallPaper{.5}{./IMG/FLISoL-2015-simples.png}
+%\ThisULCornerWallPaper{.9}{./IMG/flisol-logo-capa.jpg}
+    %\noindent
+    \setstretch{1.25} %espacamento entre linhas
+    %	\singlespacing % Para um espaçamento simples
+    %	\onehalfspacing % Para um espaçamento de 1,5
+    %	\doublespacing % Para um espaçamento duplo
+    \sffamily
+    \pagecolor{white} 
+    \color{black}
+    \maketitle
 %	\CenterWallPaper{1.1}{./IMG3D/MAKER_02.png}		
-	%	\CenterWallPaper{1.25}{./IMG/wallpaper.png}
-	%			\noindent
-	%		\end{itemize}
-	%\makebox[235mm][c]{{\includegraphics[height=50mm,width=230mm]{./IMG_2018/FB_IMG_15320316603844789.jpg}}}	\end{itemize}
-	%		\makebox[235mm][c]{	\raisebox{-\totalheight}[0mm][0pt]		{\includegraphics[height=\altura-\dXa,width=\largura]{./IMG_2018/FB_IMG_15320316603844789.jpg}}}	
-	\pagebreak
-	\tableofcontents
+    %	\CenterWallPaper{1.25}{./IMG/wallpaper.png}
+    %			\noindent
+    %		\end{itemize}
+    %\makebox[235mm][c]{{\includegraphics[height=50mm,width=230mm]{./IMG_2018/FB_IMG_15320316603844789.jpg}}}	\end{itemize}
+    %		\makebox[235mm][c]{	\raisebox{-\totalheight}[0mm][0pt]		{\includegraphics[height=\altura-\dXa,width=\largura]{./IMG_2018/FB_IMG_15320316603844789.jpg}}}	
+%    \pagebreak
+%\pagecolor{black} 
+%\vfill\null
+%\pagebreak
+
+\begin{multicols}{2}
+
+\tableofcontents
+\end{multicols}
+
+%    \tableofcontents
 %	\CenterWallPaper{1.1}{./IMG3D/MAKER_02.png}	
-	\pagebreak
-	\input{./CAPITULOS_FREECAD_EI3D}
-	%	\backmatter
-	% bibliography, glossary and index would go here.
+%    \pagebreak
+\input{./TeX_files/CAPITULOS-COMPUTADOR.tex}
+    %	\backmatter
+    % bibliography, glossary and index would go here.
 \end{document}
